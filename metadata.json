@@ -1,0 +1,6 @@
+{
+  "name": "ShiftFix AI",
+  "description": "AI-ondersteunde personeelsplanning via WhatsApp. Nooit meer stress om een opengevallen dienst.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
