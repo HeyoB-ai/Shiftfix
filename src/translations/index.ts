@@ -183,9 +183,9 @@ export const translations: Record<Language, TranslationData> = {
       plan1: {
         name: 'ShiftFix Team',
         tierLabel: 'Starter & MKB',
-        capacity: 'Tot 500 deelnemers',
+        capacity: 'Tot 100 deelnemers',
         price: '19',
-        description: 'Voor teams en groepen tot 500 deelnemers.',
+        description: 'Voor teams en groepen tot 100 deelnemers.',
         featuresLabel: 'Inbegrepen features:',
         features: [
           'AI-planningsassistent via WhatsApp',
@@ -527,9 +527,9 @@ export const translations: Record<Language, TranslationData> = {
       plan1: {
         name: 'ShiftFix Team',
         tierLabel: 'Starter & SMB',
-        capacity: 'Up to 500 participants',
+        capacity: 'Up to 100 participants',
         price: '19',
-        description: 'For teams and groups up to 500 participants.',
+        description: 'For teams and groups up to 100 participants.',
         featuresLabel: 'Included features:',
         features: [
           'AI scheduling assistant via WhatsApp',
@@ -871,9 +871,9 @@ export const translations: Record<Language, TranslationData> = {
       plan1: {
         name: 'ShiftFix Team',
         tierLabel: 'Starter & KMU',
-        capacity: 'Bis 500 Teilnehmer',
+        capacity: 'Bis 100 Teilnehmer',
         price: '19',
-        description: 'Für Teams und Gruppen bis 500 Teilnehmer.',
+        description: 'Für Teams und Gruppen bis 100 Teilnehmer.',
         featuresLabel: 'Enthaltene Funktionen:',
         features: [
           'KI-Schichtassistent via WhatsApp',
@@ -1215,9 +1215,9 @@ export const translations: Record<Language, TranslationData> = {
       plan1: {
         name: 'ShiftFix Team',
         tierLabel: 'Starter y pymes',
-        capacity: 'Hasta 500 participantes',
+        capacity: 'Hasta 100 participantes',
         price: '19',
-        description: 'Para equipos y grupos de hasta 500 miembros.',
+        description: 'Para equipos y grupos de hasta 100 miembros.',
         featuresLabel: 'Funciones incluidas:',
         features: [
           'Asistente de turnos IA en WhatsApp',
@@ -1559,9 +1559,9 @@ export const translations: Record<Language, TranslationData> = {
       plan1: {
         name: 'ShiftFix Team',
         tierLabel: 'Starter & PME',
-        capacity: 'Jusqu’à 500 participants',
+        capacity: 'Jusqu’à 100 participants',
         price: '19',
-        description: 'Pour les équipes et groupes jusqu’à 500 participants.',
+        description: 'Pour les équipes et groupes jusqu’à 100 participants.',
         featuresLabel: 'Fonctionnalités incluses :',
         features: [
           'Assistant IA de shift via WhatsApp',
