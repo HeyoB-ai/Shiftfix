@@ -11,7 +11,7 @@ export const Pricing: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <div className="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 border border-emerald-200">
-            Transparant & Laagdrempelig
+            {t.pricing.eyebrow}
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {t.pricing.title}
@@ -28,9 +28,9 @@ export const Pricing: React.FC = () => {
             <div>
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-500 bg-white px-3 py-1 rounded-full border border-slate-200">
-                  Starter & MKB
+                  {t.pricing.plan1.tierLabel}
                 </span>
-                <span className="text-xs text-slate-500 font-medium">Tot 100 deelnemers</span>
+                <span className="text-xs text-slate-500 font-medium">{t.pricing.plan1.capacity}</span>
               </div>
 
               <h3 className="text-2xl font-black text-slate-900 mb-2">
@@ -50,7 +50,7 @@ export const Pricing: React.FC = () => {
               </div>
 
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">
-                Inbegrepen features:
+                {t.pricing.plan1.featuresLabel}
               </div>
 
               <ul className="space-y-2.5">
@@ -89,9 +89,9 @@ export const Pricing: React.FC = () => {
             <div>
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">
-                  Grote teams & Multi-vestiging
+                  {t.pricing.plan2.tierLabel}
                 </span>
-                <span className="text-xs text-emerald-800 font-semibold">Tot 1.024 deelnemers</span>
+                <span className="text-xs text-emerald-800 font-semibold">{t.pricing.plan2.capacity}</span>
               </div>
 
               <h3 className="text-2xl font-black text-slate-900 mb-2">
@@ -111,7 +111,7 @@ export const Pricing: React.FC = () => {
               </div>
 
               <div className="text-xs font-bold uppercase tracking-wider text-emerald-800 mb-3">
-                Alles in Team, plus:
+                {t.pricing.plan2.featuresLabel}
               </div>
 
               <ul className="space-y-2.5">

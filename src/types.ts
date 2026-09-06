@@ -74,6 +74,7 @@ export interface TranslationData {
     }[];
   };
   pricing: {
+    eyebrow: string;
     title: string;
     subtitle: string;
     perMonth: string;
@@ -81,15 +82,21 @@ export interface TranslationData {
     cancelAnytime: string;
     plan1: {
       name: string;
+      tierLabel: string;
+      capacity: string;
       price: string;
       description: string;
+      featuresLabel: string;
       features: string[];
       cta: string;
     };
     plan2: {
       name: string;
+      tierLabel: string;
+      capacity: string;
       price: string;
       description: string;
+      featuresLabel: string;
       features: string[];
       cta: string;
     };

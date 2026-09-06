@@ -174,6 +174,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     pricing: {
+      eyebrow: 'Transparant & Laagdrempelig',
       title: 'Transparante, heldere prijzen',
       subtitle: 'Geen verborgen installatiekosten, geen langdurige wurgcontracten. Start vandaag en ervaar direct rust.',
       perMonth: 'per maand',
@@ -181,8 +182,11 @@ export const translations: Record<Language, TranslationData> = {
       cancelAnytime: 'Maandelijks opzegbaar • Geen implementatiekosten',
       plan1: {
         name: 'ShiftFix Team',
+        tierLabel: 'Starter & MKB',
+        capacity: 'Tot 500 deelnemers',
         price: '19',
-        description: 'Voor teams en groepen tot 100 deelnemers.',
+        description: 'Voor teams en groepen tot 500 deelnemers.',
+        featuresLabel: 'Inbegrepen features:',
         features: [
           'AI-planningsassistent via WhatsApp',
           'WhatsApp-gebaseerde workflow',
@@ -197,11 +201,14 @@ export const translations: Record<Language, TranslationData> = {
       },
       plan2: {
         name: 'ShiftFix Large',
+        tierLabel: 'Grote teams & Multi-vestiging',
+        capacity: 'Meer dan 500 deelnemers',
         price: '59',
-        description: 'Voor groepen tot 1.024 deelnemers.',
+        description: 'Voor teams met meer dan 500 deelnemers.',
+        featuresLabel: 'Alles in Team, plus:',
         features: [
           'Alles uit ShiftFix Team',
-          'Groepen tot 1.024 deelnemers',
+          'Teams met meer dan 500 deelnemers',
           'Geschikt voor grotere organisaties & meerdere teams',
           'Prioriteitssupport (telefoon & WhatsApp)',
           'Uitgebreidere beheeropties & export',
@@ -290,7 +297,7 @@ export const translations: Record<Language, TranslationData> = {
         },
         {
           question: 'Werkt het ook voor grote groepen?',
-          answer: 'Ja. Het ShiftFix Large-abonnement is specifiek ontworpen voor groepen tot 1.024 deelnemers en meerdere gekoppelde WhatsApp-teams of afdelingen.',
+          answer: 'Ja. Het ShiftFix Large-abonnement is specifiek ontworpen voor teams met meer dan 500 deelnemers en meerdere gekoppelde WhatsApp-teams of afdelingen.',
         },
       ],
     },
@@ -511,6 +518,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     pricing: {
+      eyebrow: 'Transparent & Accessible',
       title: 'Simple, transparent pricing',
       subtitle: 'No hidden setup fees, no multi-year lock-in. Start today and bring immediate peace of mind to your schedule.',
       perMonth: 'per month',
@@ -518,8 +526,11 @@ export const translations: Record<Language, TranslationData> = {
       cancelAnytime: 'Cancel anytime monthly • No onboarding fees',
       plan1: {
         name: 'ShiftFix Team',
+        tierLabel: 'Starter & SMB',
+        capacity: 'Up to 500 participants',
         price: '19',
-        description: 'For teams and groups up to 100 participants.',
+        description: 'For teams and groups up to 500 participants.',
+        featuresLabel: 'Included features:',
         features: [
           'AI scheduling assistant via WhatsApp',
           'WhatsApp-native workflow',
@@ -534,11 +545,14 @@ export const translations: Record<Language, TranslationData> = {
       },
       plan2: {
         name: 'ShiftFix Large',
+        tierLabel: 'Large teams & multi-site',
+        capacity: 'More than 500 participants',
         price: '59',
-        description: 'For groups up to 1,024 participants.',
+        description: 'For teams with more than 500 participants.',
+        featuresLabel: 'Everything in Team, plus:',
         features: [
           'Everything in ShiftFix Team',
-          'Groups up to 1,024 participants',
+          'Teams with more than 500 participants',
           'Designed for larger teams & multiple departments',
           'Priority support (phone & WhatsApp)',
           'Extended admin tools & CSV export',
@@ -627,7 +641,7 @@ export const translations: Record<Language, TranslationData> = {
         },
         {
           question: 'Does it support large teams?',
-          answer: 'Yes. The ShiftFix Large tier is designed for WhatsApp groups up to 1,024 members and multiple interconnected departments.',
+          answer: 'Yes. The ShiftFix Large tier is designed for teams with more than 500 participants and multiple interconnected departments.',
         },
       ],
     },
@@ -848,6 +862,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     pricing: {
+      eyebrow: 'Transparent & unkompliziert',
       title: 'Transparente, faire Preise',
       subtitle: 'Keine versteckten Gebühren, keine langfristigen Knebelverträge. Starten Sie direkt und schaffen Sie Entlastung.',
       perMonth: 'pro Monat',
@@ -855,8 +870,11 @@ export const translations: Record<Language, TranslationData> = {
       cancelAnytime: 'Monatlich kündbar • Keine Einrichtungsgebühr',
       plan1: {
         name: 'ShiftFix Team',
+        tierLabel: 'Starter & KMU',
+        capacity: 'Bis 500 Teilnehmer',
         price: '19',
-        description: 'Für Teams und Gruppen bis 100 Teilnehmer.',
+        description: 'Für Teams und Gruppen bis 500 Teilnehmer.',
+        featuresLabel: 'Enthaltene Funktionen:',
         features: [
           'KI-Schichtassistent via WhatsApp',
           'WhatsApp-basierter Workflow',
@@ -871,11 +889,14 @@ export const translations: Record<Language, TranslationData> = {
       },
       plan2: {
         name: 'ShiftFix Large',
+        tierLabel: 'Große Teams & mehrere Standorte',
+        capacity: 'Mehr als 500 Teilnehmer',
         price: '59',
-        description: 'Für Gruppen bis 1.024 Teilnehmer.',
+        description: 'Für Teams mit mehr als 500 Teilnehmern.',
+        featuresLabel: 'Alles aus Team, plus:',
         features: [
           'Alles aus ShiftFix Team',
-          'Gruppen bis 1.024 Teilnehmer',
+          'Teams mit mehr als 500 Teilnehmern',
           'Geeignet für größere Betriebe & mehrere Teams',
           'Prioritäts-Support (Telefon & WhatsApp)',
           'Erweiterte Verwaltungsoptionen & Export',
@@ -964,7 +985,7 @@ export const translations: Record<Language, TranslationData> = {
         },
         {
           question: 'Ist das System auch für große Betriebe geeignet?',
-          answer: 'Ja. Der Large-Tarif unterstützt WhatsApp-Gruppen mit bis zu 1.024 Mitgliedern sowie mehrere Schichtteams.',
+          answer: 'Ja. Der Large-Tarif unterstützt Teams mit mehr als 500 Teilnehmern sowie mehrere Schichtteams.',
         },
       ],
     },
@@ -1185,6 +1206,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     pricing: {
+      eyebrow: 'Transparente y accesible',
       title: 'Precios transparentes y sencillos',
       subtitle: 'Sin costes de alta ocultos, sin permanencias forzosas. Empieza hoy mismo y ahorra tiempo.',
       perMonth: 'al mes',
@@ -1192,8 +1214,11 @@ export const translations: Record<Language, TranslationData> = {
       cancelAnytime: 'Cancela cuando quieras cada mes • Sin costes de instalación',
       plan1: {
         name: 'ShiftFix Team',
+        tierLabel: 'Starter y pymes',
+        capacity: 'Hasta 500 participantes',
         price: '19',
-        description: 'Para equipos y grupos de hasta 100 miembros.',
+        description: 'Para equipos y grupos de hasta 500 miembros.',
+        featuresLabel: 'Funciones incluidas:',
         features: [
           'Asistente de turnos IA en WhatsApp',
           'Flujo nativo por WhatsApp',
@@ -1208,11 +1233,14 @@ export const translations: Record<Language, TranslationData> = {
       },
       plan2: {
         name: 'ShiftFix Large',
+        tierLabel: 'Equipos grandes y multisede',
+        capacity: 'Más de 500 participantes',
         price: '59',
-        description: 'Para grupos de hasta 1.024 miembros.',
+        description: 'Para equipos de más de 500 participantes.',
+        featuresLabel: 'Todo lo de Team, y además:',
         features: [
           'Todo lo de ShiftFix Team',
-          'Grupos de hasta 1.024 participantes',
+          'Equipos de más de 500 participantes',
           'Ideal para grandes plantillas o varios equipos',
           'Soporte prioritario (teléfono y WhatsApp)',
           'Opciones avanzadas de gestión y exportación',
@@ -1301,7 +1329,7 @@ export const translations: Record<Language, TranslationData> = {
         },
         {
           question: '¿Funciona bien en empresas grandes?',
-          answer: 'Sí. El plan Large está pensado para grupos de WhatsApp de hasta 1.024 participantes y múltiples departamentos.',
+          answer: 'Sí. El plan Large está pensado para equipos de más de 500 participantes y múltiples departamentos.',
         },
       ],
     },
@@ -1522,6 +1550,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     pricing: {
+      eyebrow: 'Transparent et accessible',
       title: 'Des tarifs clairs et sans surprise',
       subtitle: 'Aucuns frais cachés, aucun engagement pluri-annuel. Démarrez dès aujourd’hui et retrouvez votre sérénité.',
       perMonth: 'par mois',
@@ -1529,8 +1558,11 @@ export const translations: Record<Language, TranslationData> = {
       cancelAnytime: 'Sans engagement • Aucun frais d’installation',
       plan1: {
         name: 'ShiftFix Team',
+        tierLabel: 'Starter & PME',
+        capacity: 'Jusqu’à 500 participants',
         price: '19',
-        description: 'Pour les équipes et groupes jusqu’à 100 participants.',
+        description: 'Pour les équipes et groupes jusqu’à 500 participants.',
+        featuresLabel: 'Fonctionnalités incluses :',
         features: [
           'Assistant IA de shift via WhatsApp',
           'Processus 100% sur WhatsApp',
@@ -1545,11 +1577,14 @@ export const translations: Record<Language, TranslationData> = {
       },
       plan2: {
         name: 'ShiftFix Large',
+        tierLabel: 'Grandes équipes & multi-sites',
+        capacity: 'Plus de 500 participants',
         price: '59',
-        description: 'Pour les groupes jusqu’à 1 024 participants.',
+        description: 'Pour les équipes de plus de 500 participants.',
+        featuresLabel: 'Tout Team, plus :',
         features: [
           'Tout ce qui est inclus dans ShiftFix Team',
-          'Groupes jusqu’à 1 024 participants',
+          'Équipes de plus de 500 participants',
           'Adapté aux grandes organisations et équipes multiples',
           'Support prioritaire (téléphone & WhatsApp)',
           'Options d’administration avancées & export CSV',
@@ -1638,7 +1673,7 @@ export const translations: Record<Language, TranslationData> = {
         },
         {
           question: 'Le système est-il adapté aux grands groupes ?',
-          answer: 'Oui. Le forfait Large est spécialement conçu pour des groupes WhatsApp comptant jusqu’à 1 024 participants et plusieurs services connectés.',
+          answer: 'Oui. Le forfait Large est spécialement conçu pour des équipes de plus de 500 participants et plusieurs services connectés.',
         },
       ],
     },
