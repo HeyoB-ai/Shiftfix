@@ -36,8 +36,16 @@ export interface TranslationData {
     pillNoCalls: string;
     sectorsLabel: string;
     noteScript: string;
-    chatGroupName: string;
-    chatGroupMembers: string;
+  };
+  chat: {
+    todayLabel: string;
+    aiActiveBadge: string;
+    typingLabel: string;
+    replayLabel: string;
+    replayTitle: string;
+    inputPlaceholder: string;
+    trustPill: string;
+    scenarios: ChatScenario[];
   };
   problem: {
     eyebrow: string;
@@ -244,14 +252,33 @@ export interface TranslationData {
   };
 }
 
+export type ChatMessageKind = 'employee' | 'ai' | 'planner';
+
+/** Gestructureerd AI-bericht: kop, regels en een optionele oproep met trefwoord. */
+export interface ChatCard {
+  icon: string;
+  title: string;
+  lines: string[];
+  highlight?: string;
+  volunteers?: string[];
+  footerBefore?: string;
+  keyword?: string;
+  footerAfter?: string;
+}
+
 export interface ChatMessage {
-  id: string;
+  kind: ChatMessageKind;
   sender: string;
-  avatarLetter?: string;
-  avatarColor?: string;
-  isAI?: boolean;
-  isPlanner?: boolean;
   time: string;
-  text: string;
-  badge?: string;
+  text?: string;
+  card?: ChatCard;
+}
+
+export interface ChatScenario {
+  id: string;
+  name: string;
+  company: string;
+  groupTitle: string;
+  members: string;
+  messages: ChatMessage[];
 }
