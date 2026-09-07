@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { CalendarCheck } from 'lucide-react';
 
 interface LogoProps {
@@ -8,6 +9,8 @@ interface LogoProps {
 }
 
 export const Logo: React.FC<LogoProps> = ({ size = 'md', showTagline = true, light = false }) => {
+  const { t } = useLanguage();
+
   const iconSizes = {
     sm: 'w-7 h-7 rounded-xl p-1',
     md: 'w-9 h-9 rounded-xl p-1.5',
@@ -38,7 +41,7 @@ export const Logo: React.FC<LogoProps> = ({ size = 'md', showTagline = true, lig
               light ? 'text-emerald-300' : 'text-slate-600'
             }`}
           >
-            Mensen op de juiste plek
+            {t.nav.logoTagline}
           </span>
         )}
       </div>

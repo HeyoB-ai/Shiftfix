@@ -23,7 +23,7 @@ export const Sectors: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <div className="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 border border-emerald-200">
-            Doelgroepen & Sectoren
+            {t.sectors.eyebrow}
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {t.sectors.title}
@@ -72,7 +72,7 @@ export const Sectors: React.FC = () => {
 
                 <div className="mt-3.5 pt-2.5 border-t border-slate-100">
                   <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-1">
-                    Voorbeelddienst
+                    {t.sectors.exampleShiftLabel}
                   </div>
                   <div className="text-[11px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-1 rounded-md border border-emerald-100 truncate">
                     {sector.exampleShift}
@@ -89,7 +89,7 @@ export const Sectors: React.FC = () => {
             <CheckCircle2 className="w-5 h-5" />
           </div>
           <div className="text-xs sm:text-sm text-slate-700 font-medium">
-            <strong className="text-slate-900 font-bold">Universele inzetbaarheid:</strong> {t.sectors.genericNotice}
+            <strong className="text-slate-900 font-bold">{t.sectors.genericNoticeLabel}</strong> {t.sectors.genericNotice}
           </div>
         </div>
       </div>

@@ -60,7 +60,7 @@ export const HowItWorks: React.FC = () => {
 
               <div className="mt-5 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700">
                 <Check className="w-3.5 h-3.5" />
-                <span>Geheel binnen WhatsApp</span>
+                <span>{t.howItWorks.whatsappOnlyPill}</span>
               </div>
             </div>
           ))}

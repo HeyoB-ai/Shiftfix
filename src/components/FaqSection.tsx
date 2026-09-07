@@ -16,7 +16,7 @@ export const FaqSection: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-10">
           <div className="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 border border-emerald-200">
-            Helderheid Voorop
+            {t.faq.eyebrow}
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {t.faq.title}
@@ -74,8 +74,8 @@ export const FaqSection: React.FC = () => {
               <HelpCircle className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-sm font-bold text-slate-900">Staat je vraag er niet tussen?</div>
-              <div className="text-xs text-slate-500">We beantwoorden al je vragen graag persoonlijk in een korte demo.</div>
+              <div className="text-sm font-bold text-slate-900">{t.faq.moreQuestionsTitle}</div>
+              <div className="text-xs text-slate-500">{t.faq.moreQuestionsSubtitle}</div>
             </div>
           </div>
           <button
@@ -83,7 +83,7 @@ export const FaqSection: React.FC = () => {
             onClick={() => scrollToSection('demo')}
             className="text-xs font-bold text-emerald-700 hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100 px-4 py-2 rounded-xl border border-emerald-200 transition-colors shrink-0 cursor-pointer"
           >
-            Stel je vraag via de demo
+            {t.faq.moreQuestionsCta}
           </button>
         </div>
       </div>

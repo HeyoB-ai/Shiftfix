@@ -12,7 +12,7 @@ export const SecuritySection: React.FC = () => {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-              <span>AVG & Privacy First</span>
+              <span>{t.security.badge}</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-tight mb-3">
               {t.security.title}

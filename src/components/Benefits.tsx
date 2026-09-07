@@ -51,8 +51,8 @@ export const Benefits: React.FC = () => {
               </div>
 
               <div className="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500 font-medium">
-                <span className="text-emerald-700 font-semibold">Direct voordeel</span>
-                <span>Geen frictie</span>
+                <span className="text-emerald-700 font-semibold">{t.benefits.itemBadgeBenefit}</span>
+                <span>{t.benefits.itemBadgeFriction}</span>
               </div>
             </div>
           ))}

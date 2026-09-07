@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { LanguageProvider } from './context/LanguageContext';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { ProblemSection } from './components/ProblemSection';
@@ -16,6 +16,7 @@ import { Footer } from './components/Footer';
 import { ArrowUp, Calendar } from 'lucide-react';
 
 const MainContent: React.FC = () => {
+  const { t } = useLanguage();
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
@@ -60,18 +61,18 @@ const MainContent: React.FC = () => {
             type="button"
             onClick={scrollToDemo}
             className="hidden sm:flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs px-4 py-3 rounded-full shadow-lg shadow-emerald-700/25 transition-all hover:scale-105"
-            title="Vraag direct een demo aan"
+            title={t.nav.floatingDemoTitle}
           >
             <Calendar className="w-4 h-4" />
-            <span>Vraag een demo</span>
+            <span>{t.nav.requestDemo}</span>
           </button>
 
           <button
             type="button"
             onClick={scrollToTop}
             className="w-11 h-11 bg-white hover:bg-slate-50 text-slate-700 hover:text-emerald-700 rounded-full border border-slate-200 shadow-md flex items-center justify-center transition-all hover:scale-105"
-            title="Naar boven"
-            aria-label="Scroll naar boven"
+            title={t.nav.backToTop}
+            aria-label={t.nav.backToTop}
           >
             <ArrowUp className="w-5 h-5" />
           </button>

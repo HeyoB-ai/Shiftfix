@@ -9,6 +9,9 @@ export const translations: Record<Language, TranslationData> = {
       ogDescription: 'ShiftFix AI helpt organisaties met wisselende diensten om via WhatsApp en AI snel beschikbare invallers te vinden. Minder bellen, minder stress, sneller opgelost.',
     },
     nav: {
+      floatingDemoTitle: 'Vraag direct een demo aan',
+      backToTop: 'Naar boven',
+      logoTagline: 'Mensen op de juiste plek',
       howItWorks: 'Hoe het werkt',
       forWhom: 'Voor wie',
       benefits: 'Voordelen',
@@ -33,6 +36,13 @@ export const translations: Record<Language, TranslationData> = {
       chatGroupMembers: '11 leden • Keuken, Bediening, Management',
     },
     problem: {
+      eyebrow: 'Het dagelijkse knelpunt',
+      traditionalBadge: 'Chaotisch',
+      traditionalTime: 'Gemiddeld 40-60 min per dienst',
+      shiftFixBadge: 'Aanbevolen',
+      shiftFixTime: 'Binnen 2 tot 5 minuten opgelost',
+      takeawayLabel: 'De rode draad',
+      noCallsPill: '0 beluren nodig',
       title: 'Een ziekmelding kost vaak veel meer tijd dan nodig.',
       subtitle: 'Herkenbaar? Zodra een dienst openvalt, start een tijdrovende zoektocht die de dagelijkse operatie verstoort en onnodige stress oplevert voor de planner.',
       traditionalTitle: 'Zonder ShiftFix AI',
@@ -59,6 +69,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'Als iemand uitvalt, hoef je niet meer iedereen af te bellen. ShiftFix AI vraagt de groep automatisch wie kan invallen.',
     },
     howItWorks: {
+      whatsappOnlyPill: 'Geheel binnen WhatsApp',
       title: 'Hoe ShiftFix AI werkt in 4 stappen',
       subtitle: 'Geen nieuw systeem dat iedereen moet leren. ShiftFix AI integreert naadloos in de WhatsApp-groepen waar je team nu al dagelijks actief is.',
       steps: [
@@ -97,6 +108,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      itemBadgeBenefit: 'Direct voordeel',
+      itemBadgeFriction: 'Geen frictie',
       title: 'Waarom planners en teams kiezen voor ShiftFix AI',
       subtitle: 'Slimme technologie die je bestaande roostersysteem respecteert en de last-minute stress volledig wegneemt.',
       items: [
@@ -127,6 +140,9 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     sectors: {
+      eyebrow: 'Doelgroepen & Sectoren',
+      exampleShiftLabel: 'Voorbeelddienst',
+      genericNoticeLabel: 'Universele inzetbaarheid:',
       title: 'Ontworpen voor organisaties met wisselende diensten',
       subtitle: 'Of je nu een restaurant runt, een magazijn aanstuurt of een zorgteam leidt: ShiftFix AI past in elke flexibele personeelsstructuur.',
       genericNotice: 'ShiftFix AI is generiek en direct inzetbaar voor iedere organisatie met wisselende diensten en flexibele roosters.',
@@ -272,6 +288,10 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     faq: {
+      eyebrow: 'Helderheid Voorop',
+      moreQuestionsTitle: 'Staat je vraag er niet tussen?',
+      moreQuestionsSubtitle: 'We beantwoorden al je vragen graag persoonlijk in een korte demo.',
+      moreQuestionsCta: 'Stel je vraag via de demo',
       title: 'Veelgestelde vragen',
       subtitle: 'Alles wat je moet weten over het inzetten van ShiftFix AI in jouw organisatie.',
       items: [
@@ -325,6 +345,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     bottomCta: {
+      noInstall: 'Geen installatie vereist',
+      cancelMonthly: 'Maandelijks opzegbaar',
       badge: 'Start binnen 1 dag',
       title: 'Laat je planners plannen. Niet bellen.',
       subtitle: 'ShiftFix AI neemt het tijdrovende zoeken naar beschikbare invallers volledig uit handen. Ervaar direct meer rust op de werkvloer.',
@@ -353,6 +375,9 @@ export const translations: Record<Language, TranslationData> = {
       ogDescription: 'ShiftFix AI helps shift-based teams find available cover instantly via WhatsApp and AI. Less calling, less stress, faster resolution.',
     },
     nav: {
+      floatingDemoTitle: 'Request a demo right away',
+      backToTop: 'Back to top',
+      logoTagline: 'The right people in the right place',
       howItWorks: 'How it works',
       forWhom: 'Who it’s for',
       benefits: 'Benefits',
@@ -377,6 +402,13 @@ export const translations: Record<Language, TranslationData> = {
       chatGroupMembers: '11 members • Kitchen, Service, Management',
     },
     problem: {
+      eyebrow: 'The daily bottleneck',
+      traditionalBadge: 'Chaotic',
+      traditionalTime: 'On average 40-60 min per shift',
+      shiftFixBadge: 'Recommended',
+      shiftFixTime: 'Solved within 2 to 5 minutes',
+      takeawayLabel: 'The common thread',
+      noCallsPill: '0 hours on the phone',
       title: 'A sick call often costs far more time than necessary.',
       subtitle: 'Sound familiar? As soon as a shift opens up, an exhausting search begins that disrupts the entire day and stresses out the scheduler.',
       traditionalTitle: 'Without ShiftFix AI',
@@ -403,6 +435,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'When someone drops out, you no longer need to call everyone. ShiftFix AI automatically asks the team who can cover.',
     },
     howItWorks: {
+      whatsappOnlyPill: 'Entirely within WhatsApp',
       title: 'How ShiftFix AI works in 4 steps',
       subtitle: 'No complex app to install. ShiftFix AI integrates seamlessly into the WhatsApp group where your team already connects every single day.',
       steps: [
@@ -441,6 +474,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      itemBadgeBenefit: 'Immediate benefit',
+      itemBadgeFriction: 'No friction',
       title: 'Why schedulers and teams choose ShiftFix AI',
       subtitle: 'Clever technology that respects your existing rostering tools and eliminates last-minute panic.',
       items: [
@@ -471,6 +506,9 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     sectors: {
+      eyebrow: 'Audiences & sectors',
+      exampleShiftLabel: 'Example shift',
+      genericNoticeLabel: 'Universally applicable:',
       title: 'Tailored for organizations with shift-based work',
       subtitle: 'Whether you run a restaurant, manage a warehouse, or lead a care facility: ShiftFix AI fits any dynamic workforce.',
       genericNotice: 'ShiftFix AI is universally applicable to any business operating on rotating, flexible, or on-demand rosters.',
@@ -616,6 +654,10 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     faq: {
+      eyebrow: 'Clarity first',
+      moreQuestionsTitle: 'Is your question not listed?',
+      moreQuestionsSubtitle: 'We are happy to answer all your questions personally in a short demo.',
+      moreQuestionsCta: 'Ask your question in the demo',
       title: 'Frequently asked questions',
       subtitle: 'Everything you need to know about implementing ShiftFix AI across your operations.',
       items: [
@@ -669,6 +711,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     bottomCta: {
+      noInstall: 'No installation required',
+      cancelMonthly: 'Cancel monthly',
       badge: 'Up and running in 1 day',
       title: 'Let your managers manage. Not dial.',
       subtitle: 'ShiftFix AI automates the tedious search for available replacements. Bring peace of mind back to your schedule.',
@@ -697,6 +741,9 @@ export const translations: Record<Language, TranslationData> = {
       ogDescription: 'ShiftFix AI hilft Schichtbetrieben, bei Krankheitsausfällen sofort per WhatsApp und KI verfügbare Springer zu finden.',
     },
     nav: {
+      floatingDemoTitle: 'Direkt eine Demo anfragen',
+      backToTop: 'Nach oben',
+      logoTagline: 'Die richtigen Leute am richtigen Platz',
       howItWorks: 'Funktionsweise',
       forWhom: 'Zielgruppen',
       benefits: 'Vorteile',
@@ -721,6 +768,13 @@ export const translations: Record<Language, TranslationData> = {
       chatGroupMembers: '11 Mitglieder • Küche, Service, Leitung',
     },
     problem: {
+      eyebrow: 'Der tägliche Engpass',
+      traditionalBadge: 'Chaotisch',
+      traditionalTime: 'Durchschnittlich 40-60 Min. pro Schicht',
+      shiftFixBadge: 'Empfohlen',
+      shiftFixTime: 'In 2 bis 5 Minuten gelöst',
+      takeawayLabel: 'Der rote Faden',
+      noCallsPill: '0 Telefonstunden nötig',
       title: 'Eine Krankmeldung kostet bisher viel zu viel Zeit.',
       subtitle: 'Kennen Sie das? Fällt eine Schicht aus, beginnt eine zeitraubende Suche, die den Tagesablauf stört und Planer massiv stresst.',
       traditionalTitle: 'Ohne ShiftFix AI',
@@ -747,6 +801,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'Wenn jemand ausfällt, müssen Sie nicht mehr alle abtelefonieren. ShiftFix AI fragt die Gruppe automatisch, wer einspringen kann.',
     },
     howItWorks: {
+      whatsappOnlyPill: 'Komplett in WhatsApp',
       title: 'So funktioniert ShiftFix AI in 4 Schritten',
       subtitle: 'Keine neue App, die Mitarbeiter installieren müssen. ShiftFix AI läuft direkt in der WhatsApp-Gruppe, die Ihr Team ohnehin täglich nutzt.',
       steps: [
@@ -785,6 +840,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      itemBadgeBenefit: 'Sofortiger Vorteil',
+      itemBadgeFriction: 'Keine Reibung',
       title: 'Warum Schichtplaner auf ShiftFix AI setzen',
       subtitle: 'Intelligente Unterstützung, die Ihren bestehenden Dienstplan ergänzt und den Notfall-Stress eliminiert.',
       items: [
@@ -815,6 +872,9 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     sectors: {
+      eyebrow: 'Zielgruppen & Branchen',
+      exampleShiftLabel: 'Beispielschicht',
+      genericNoticeLabel: 'Universell einsetzbar:',
       title: 'Für alle Branchen mit Schichtbetrieb konzipiert',
       subtitle: 'Ob Restaurant, Pflegeheim oder Distributionszentrum: ShiftFix AI passt sich nahtlos an jede Schichtstruktur an.',
       genericNotice: 'ShiftFix AI ist universell einsetzbar für jedes Unternehmen mit flexiblen Dienst- und Schichtplänen.',
@@ -960,6 +1020,10 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     faq: {
+      eyebrow: 'Klarheit zuerst',
+      moreQuestionsTitle: 'Ist Ihre Frage nicht dabei?',
+      moreQuestionsSubtitle: 'Wir beantworten alle Ihre Fragen gern persönlich in einer kurzen Demo.',
+      moreQuestionsCta: 'Stellen Sie Ihre Frage in der Demo',
       title: 'Häufig gestellte Fragen',
       subtitle: 'Alles Wissenswerte über die Einführung von ShiftFix AI in Ihrem Unternehmen.',
       items: [
@@ -1013,6 +1077,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     bottomCta: {
+      noInstall: 'Keine Installation nötig',
+      cancelMonthly: 'Monatlich kündbar',
       badge: 'In 24h einsatzbereit',
       title: 'Lassen Sie Planer planen. Nicht telefonieren.',
       subtitle: 'ShiftFix AI übernimmt das zeitraubende Suchen nach Schichtvertretungen. Bringen Sie dauerhafte Entlastung in Ihren Alltag.',
@@ -1041,6 +1107,9 @@ export const translations: Record<Language, TranslationData> = {
       ogDescription: 'ShiftFix AI ayuda a empresas con turnos rotativos a encontrar sustitutos disponibles al instante mediante WhatsApp e IA.',
     },
     nav: {
+      floatingDemoTitle: 'Solicita una demo ahora',
+      backToTop: 'Volver arriba',
+      logoTagline: 'Las personas adecuadas en el lugar adecuado',
       howItWorks: 'Cómo funciona',
       forWhom: 'Sectores',
       benefits: 'Ventajas',
@@ -1065,6 +1134,13 @@ export const translations: Record<Language, TranslationData> = {
       chatGroupMembers: '11 miembros • Cocina, Sala, Dirección',
     },
     problem: {
+      eyebrow: 'El cuello de botella diario',
+      traditionalBadge: 'Caótico',
+      traditionalTime: 'De media, 40-60 min por turno',
+      shiftFixBadge: 'Recomendado',
+      shiftFixTime: 'Resuelto en 2 a 5 minutos',
+      takeawayLabel: 'El hilo conductor',
+      noCallsPill: '0 horas al teléfono',
       title: 'Cubrir una baja cuesta mucho más tiempo del necesario.',
       subtitle: '¿Te resulta familiar? En cuanto queda un turno desierto, empieza una búsqueda agotadora que paraliza la jornada y genera un estrés innecesario.',
       traditionalTitle: 'Sin ShiftFix AI',
@@ -1091,6 +1167,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'Cuando alguien falta, ya no tienes que llamar a toda la plantilla. ShiftFix AI pregunta automáticamente al grupo quién puede cubrirlo.',
     },
     howItWorks: {
+      whatsappOnlyPill: 'Todo dentro de WhatsApp',
       title: 'Cómo funciona ShiftFix AI en 4 pasos',
       subtitle: 'Sin aplicaciones complicadas que los empleados tengan que instalar. ShiftFix AI opera directamente dentro del grupo de WhatsApp que ya utilizan a diario.',
       steps: [
@@ -1129,6 +1206,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      itemBadgeBenefit: 'Beneficio inmediato',
+      itemBadgeFriction: 'Sin fricción',
       title: 'Por qué los supervisores eligen ShiftFix AI',
       subtitle: 'Tecnología inteligente que complementa tu cuadrante habitual y elimina el pánico de última hora.',
       items: [
@@ -1159,6 +1238,9 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     sectors: {
+      eyebrow: 'Públicos y sectores',
+      exampleShiftLabel: 'Turno de ejemplo',
+      genericNoticeLabel: 'Aplicable a cualquier sector:',
       title: 'Diseñado para empresas con turnos rotativos',
       subtitle: 'Desde un restaurante concurrido hasta un hospital o almacén logístico: ShiftFix AI se adapta a cualquier plantilla.',
       genericNotice: 'ShiftFix AI es aplicable a cualquier organización con personal a turnos y horarios variables.',
@@ -1304,6 +1386,10 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     faq: {
+      eyebrow: 'Claridad ante todo',
+      moreQuestionsTitle: '¿No encuentras tu pregunta?',
+      moreQuestionsSubtitle: 'Respondemos con gusto a todas tus preguntas en una demo breve.',
+      moreQuestionsCta: 'Haz tu pregunta en la demo',
       title: 'Preguntas frecuentes',
       subtitle: 'Todo lo que necesitas saber antes de implementar ShiftFix AI en tu equipo.',
       items: [
@@ -1357,6 +1443,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     bottomCta: {
+      noInstall: 'Sin instalación',
+      cancelMonthly: 'Cancela cada mes',
       badge: 'Listo en 24 horas',
       title: 'Deja que tus mandos gestionen. No que pasen horas llamando.',
       subtitle: 'ShiftFix AI automatiza la búsqueda de personal disponible. Devuelve la tranquilidad a tu operativa diaria.',
@@ -1385,6 +1473,9 @@ export const translations: Record<Language, TranslationData> = {
       ogDescription: 'ShiftFix AI aide les organisations à trouver rapidement des remplaçants via WhatsApp et l’IA.',
     },
     nav: {
+      floatingDemoTitle: 'Demander une démo tout de suite',
+      backToTop: 'Retour en haut',
+      logoTagline: 'Les bonnes personnes au bon endroit',
       howItWorks: 'Comment ça marche',
       forWhom: 'Secteurs',
       benefits: 'Avantages',
@@ -1409,6 +1500,13 @@ export const translations: Record<Language, TranslationData> = {
       chatGroupMembers: '11 membres • Cuisine, Salle, Direction',
     },
     problem: {
+      eyebrow: 'Le casse-tête quotidien',
+      traditionalBadge: 'Chaotique',
+      traditionalTime: 'En moyenne 40-60 min par service',
+      shiftFixBadge: 'Recommandé',
+      shiftFixTime: 'Réglé en 2 à 5 minutes',
+      takeawayLabel: 'Le fil rouge',
+      noCallsPill: '0 heure au téléphone',
       title: 'Un arrêt maladie coûte souvent bien plus de temps que prévu.',
       subtitle: 'Une situation familière ? Dès qu’un poste se libère, une recherche chronophage commence, perturbant l’activité et stressant le responsable de planning.',
       traditionalTitle: 'Sans ShiftFix AI',
@@ -1435,6 +1533,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'Quand un collaborateur est absent, vous n’avez plus besoin d’appeler tout le monde. ShiftFix AI sollicite automatiquement l’équipe.',
     },
     howItWorks: {
+      whatsappOnlyPill: 'Entièrement dans WhatsApp',
       title: 'Comment fonctionne ShiftFix AI en 4 étapes',
       subtitle: 'Aucune application complexe à installer. ShiftFix AI s’intègre directement dans le groupe WhatsApp que votre équipe utilise déjà chaque jour.',
       steps: [
@@ -1473,6 +1572,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      itemBadgeBenefit: 'Bénéfice immédiat',
+      itemBadgeFriction: 'Sans friction',
       title: 'Pourquoi les planificateurs choisissent ShiftFix AI',
       subtitle: 'Une technologie intelligente qui respecte votre logiciel de planning existant et supprime le stress des imprévus.',
       items: [
@@ -1503,6 +1604,9 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     sectors: {
+      eyebrow: 'Publics & secteurs',
+      exampleShiftLabel: 'Exemple de service',
+      genericNoticeLabel: 'Utilisable partout :',
       title: 'Conçu pour les métiers aux plannings modulables',
       subtitle: 'Que vous gériez un restaurant, un entrepôt ou un établissement de santé : ShiftFix AI s’adapte à votre réalité terrain.',
       genericNotice: 'ShiftFix AI est universel et s’adresse à toute structure opérant avec des équipes en horaires décalés ou tournants.',
@@ -1648,6 +1752,10 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     faq: {
+      eyebrow: 'La clarté avant tout',
+      moreQuestionsTitle: 'Votre question ne figure pas ici ?',
+      moreQuestionsSubtitle: 'Nous répondons volontiers à toutes vos questions lors d’une courte démo.',
+      moreQuestionsCta: 'Posez votre question en démo',
       title: 'Foire aux questions',
       subtitle: 'Tout ce que vous devez savoir avant de déployer ShiftFix AI dans votre entreprise.',
       items: [
@@ -1701,6 +1809,8 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     bottomCta: {
+      noInstall: 'Aucune installation requise',
+      cancelMonthly: 'Sans engagement',
       badge: 'Opérationnel en 24h',
       title: 'Laissez vos managers planifier. Pas passer des heures au téléphone.',
       subtitle: 'ShiftFix AI automatise la recherche de remplaçants disponibles. Retrouvez enfin la sérénité au quotidien.',

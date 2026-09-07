@@ -8,6 +8,9 @@ export interface TranslationData {
     ogDescription: string;
   };
   nav: {
+    floatingDemoTitle: string;
+    backToTop: string;
+    logoTagline: string;
     howItWorks: string;
     forWhom: string;
     benefits: string;
@@ -32,6 +35,13 @@ export interface TranslationData {
     chatGroupMembers: string;
   };
   problem: {
+    eyebrow: string;
+    traditionalBadge: string;
+    traditionalTime: string;
+    shiftFixBadge: string;
+    shiftFixTime: string;
+    takeawayLabel: string;
+    noCallsPill: string;
     title: string;
     subtitle: string;
     traditionalTitle: string;
@@ -43,6 +53,7 @@ export interface TranslationData {
     impactQuote: string;
   };
   howItWorks: {
+    whatsappOnlyPill: string;
     title: string;
     subtitle: string;
     steps: {
@@ -56,6 +67,8 @@ export interface TranslationData {
     highlightPills: string[];
   };
   benefits: {
+    itemBadgeBenefit: string;
+    itemBadgeFriction: string;
     title: string;
     subtitle: string;
     items: {
@@ -64,6 +77,9 @@ export interface TranslationData {
     }[];
   };
   sectors: {
+    eyebrow: string;
+    exampleShiftLabel: string;
+    genericNoticeLabel: string;
     title: string;
     subtitle: string;
     genericNotice: string;
@@ -155,6 +171,10 @@ export interface TranslationData {
     };
   };
   faq: {
+    eyebrow: string;
+    moreQuestionsTitle: string;
+    moreQuestionsSubtitle: string;
+    moreQuestionsCta: string;
     title: string;
     subtitle: string;
     items: {
@@ -172,6 +192,8 @@ export interface TranslationData {
     }[];
   };
   bottomCta: {
+    noInstall: string;
+    cancelMonthly: string;
     title: string;
     subtitle: string;
     ctaPrimary: string;

@@ -48,11 +48,11 @@ export const BottomCta: React.FC = () => {
         <div className="mt-8 flex items-center justify-center gap-6 text-xs text-slate-400">
           <span className="flex items-center gap-1.5">
             <CheckCheck className="w-4 h-4 text-emerald-400" />
-            Geen installatie vereist
+            {t.bottomCta.noInstall}
           </span>
           <span className="flex items-center gap-1.5">
             <CheckCheck className="w-4 h-4 text-emerald-400" />
-            Maandelijks opzegbaar
+            {t.bottomCta.cancelMonthly}
           </span>
         </div>
       </div>
