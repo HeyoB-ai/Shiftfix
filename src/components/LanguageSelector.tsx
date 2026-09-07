@@ -12,7 +12,7 @@ const languageOptions: { code: Language; name: string; nativeName: string; flag:
 ];
 
 export const LanguageSelector: React.FC<{ compact?: boolean; dark?: boolean }> = ({ compact = false, dark = false }) => {
-  const { language, setLanguage } = useLanguage();
+  const { language, setLanguage, t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -54,7 +54,7 @@ export const LanguageSelector: React.FC<{ compact?: boolean; dark?: boolean }> =
         >
           <div className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1 flex items-center gap-1">
             <Globe className="w-3 h-3 text-emerald-600" />
-            <span>Select language</span>
+            <span>{t.footer.language}</span>
           </div>
           {languageOptions.map((opt) => (
             <button

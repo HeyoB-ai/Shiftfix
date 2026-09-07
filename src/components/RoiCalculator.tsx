@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { Language } from '../types';
 import { Calculator, TrendingUp, Clock, Euro, CheckCircle, ArrowRight } from 'lucide-react';
 
+const numberLocales: Record<Language, string> = {
+  nl: 'nl-NL',
+  en: 'en-US',
+  de: 'de-DE',
+  es: 'es-ES',
+  fr: 'fr-FR',
+};
+
 export const RoiCalculator: React.FC = () => {
-  const { t, scrollToSection } = useLanguage();
+  const { t, language, scrollToSection } = useLanguage();
+  const locale = numberLocales[language];
 
   // Inputs with realistic defaults
   const [absencesPerMonth, setAbsencesPerMonth] = useState<number>(10);
@@ -32,7 +42,7 @@ export const RoiCalculator: React.FC = () => {
           <div className="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 border border-emerald-200">
             <span className="flex items-center gap-1.5">
               <Calculator className="w-3.5 h-3.5" />
-              Interactieve ROI Calculator
+              {t.roi.eyebrow}
             </span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -51,7 +61,7 @@ export const RoiCalculator: React.FC = () => {
             </div>
             <div>
               <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                Rekenvoorbeeld uit de praktijk
+                {t.roi.exampleLabel}
               </div>
               <p className="text-xs sm:text-sm text-slate-700 font-medium mt-0.5">
                 {t.roi.exampleText}
@@ -69,8 +79,8 @@ export const RoiCalculator: React.FC = () => {
           <div className="lg:col-span-6 bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between space-y-6">
             <div>
               <h3 className="text-base font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
-                <span>Jouw situatie instellen</span>
-                <span className="text-xs text-slate-400 font-normal">Verander de waarden</span>
+                <span>{t.roi.controlsTitle}</span>
+                <span className="text-xs text-slate-400 font-normal">{t.roi.controlsHint}</span>
               </h3>
 
               {/* Slider 1: Absences per month */}
@@ -78,7 +88,7 @@ export const RoiCalculator: React.FC = () => {
                 <div className="flex items-center justify-between text-xs font-bold text-slate-700">
                   <span>{t.roi.labels.absencesPerMonth}</span>
                   <span className="text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200 text-sm">
-                    {absencesPerMonth} per maand
+                    {absencesPerMonth} {t.roi.labels.perMonth}
                   </span>
                 </div>
                 <input
@@ -91,9 +101,9 @@ export const RoiCalculator: React.FC = () => {
                   id="roi-absences-slider"
                 />
                 <div className="flex justify-between text-[10px] text-slate-400 font-medium">
-                  <span>2 meldingen</span>
-                  <span>30 meldingen</span>
-                  <span>60 meldingen</span>
+                  <span>2 {t.roi.labels.absencesUnit}</span>
+                  <span>30 {t.roi.labels.absencesUnit}</span>
+                  <span>60 {t.roi.labels.absencesUnit}</span>
                 </div>
               </div>
 
@@ -141,9 +151,9 @@ export const RoiCalculator: React.FC = () => {
                   id="roi-wage-slider"
                 />
                 <div className="flex justify-between text-[10px] text-slate-400 font-medium">
-                  <span>€20/u</span>
-                  <span>€40/u</span>
-                  <span>€65/u</span>
+                  <span>€20</span>
+                  <span>€40</span>
+                  <span>€65</span>
                 </div>
               </div>
             </div>
@@ -159,10 +169,10 @@ export const RoiCalculator: React.FC = () => {
             <div>
               <div className="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
                 <span className="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3 py-0.5 rounded-full">
-                  Geschatte Opbrengst
+                  {t.roi.results.estimatedReturn}
                 </span>
                 <span className="text-xs text-slate-500 font-medium">
-                  Investering: €{subscriptionCost}/m
+                  {t.roi.results.investmentLabel} €{subscriptionCost}/m
                 </span>
               </div>
 
@@ -173,11 +183,11 @@ export const RoiCalculator: React.FC = () => {
                   <span>{t.roi.results.monthlyCostSaved}</span>
                 </div>
                 <div className="text-3xl sm:text-4xl font-black text-emerald-700 tracking-tight">
-                  € {Math.round(monthlyCostSaved).toLocaleString('nl-NL')}
-                  <span className="text-xs font-normal text-slate-500 ml-1.5">/ maand</span>
+                  € {Math.round(monthlyCostSaved).toLocaleString(locale)}
+                  <span className="text-xs font-normal text-slate-500 ml-1.5">{t.roi.results.perMonthSuffix}</span>
                 </div>
                 <div className="text-xs text-emerald-800 font-semibold mt-1">
-                  Netto winst: € {Math.round(netMonthlyProfit).toLocaleString('nl-NL')} per maand
+                  {t.roi.results.netProfitLabel} € {Math.round(netMonthlyProfit).toLocaleString(locale)} {t.roi.labels.perMonth}
                 </div>
               </div>
 
@@ -186,23 +196,23 @@ export const RoiCalculator: React.FC = () => {
                 <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
                   <div className="text-[11px] text-slate-500 font-medium flex items-center gap-1">
                     <Clock className="w-3 h-3 text-emerald-600" />
-                    <span>Bespaarde tijd</span>
+                    <span>{t.roi.results.monthlyHoursSaved}</span>
                   </div>
                   <div className="text-xl font-extrabold text-slate-900 mt-0.5">
-                    {hoursSavedPerMonth.toFixed(1)} uur
+                    {hoursSavedPerMonth.toFixed(1)} {t.roi.labels.hours}
                   </div>
-                  <div className="text-[10px] text-slate-400">per maand terug</div>
+                  <div className="text-[10px] text-slate-400">{t.roi.results.perMonthBack}</div>
                 </div>
 
                 <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
                   <div className="text-[11px] text-slate-500 font-medium flex items-center gap-1">
                     <TrendingUp className="w-3 h-3 text-emerald-600" />
-                    <span>Besparing p/jaar</span>
+                    <span>{t.roi.results.annualCostSaved}</span>
                   </div>
                   <div className="text-xl font-extrabold text-slate-900 mt-0.5">
-                    € {Math.round(annualCostSaved).toLocaleString('nl-NL')}
+                    € {Math.round(annualCostSaved).toLocaleString(locale)}
                   </div>
-                  <div className="text-[10px] text-emerald-700 font-bold">{roiMultiplier}x return on investment</div>
+                  <div className="text-[10px] text-emerald-700 font-bold">{t.roi.results.roiMultiplier}: {roiMultiplier}x</div>
                 </div>
               </div>
             </div>
@@ -213,7 +223,7 @@ export const RoiCalculator: React.FC = () => {
               onClick={() => scrollToSection('demo')}
               className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-xs transition-colors flex items-center justify-center gap-2 cursor-pointer mt-2"
             >
-              <span>Verzilver deze besparing nu</span>
+              <span>{t.roi.ctaButton}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>

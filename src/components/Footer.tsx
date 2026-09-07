@@ -15,10 +15,10 @@ export const Footer: React.FC = () => {
           {/* Col 1: Sector Focus */}
           <div>
             <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2.5">
-              Sector Focus
+              {t.footer.sectorFocus}
             </div>
             <div className="flex flex-wrap gap-1.5">
-              {['Horeca', 'Logistiek', 'Zorg', 'Retail', 'Schoonmaak', 'Beveiliging'].map((s) => (
+              {t.hero.sectorPills.map((s) => (
                 <button
                   key={s}
                   type="button"
@@ -34,14 +34,14 @@ export const Footer: React.FC = () => {
           {/* Col 2: Calculator Snapshot */}
           <div className="lg:border-l lg:border-slate-200 lg:pl-6">
             <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2.5">
-              Besparings Calculator
+              {t.nav.roi}
             </div>
             <div className="flex items-center gap-3">
               <div className="text-lg font-black text-emerald-600 font-mono">
                 € 1.450,-
               </div>
               <div className="text-[11px] text-slate-500 leading-tight">
-                Gemiddelde besparing p/m<br />bij 10 ziekmeldingen
+                {t.footer.avgSavingsLabel}<br />{t.footer.avgSavingsBasis}
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@ export const Footer: React.FC = () => {
           {/* Col 3: Pricing Snapshot */}
           <div className="lg:border-l lg:border-slate-200 lg:pl-6">
             <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2.5">
-              Tarieven
+              {t.nav.pricing}
             </div>
             <div className="flex items-center gap-4 text-xs font-semibold text-slate-800">
               <span className="bg-slate-50 px-2 py-1 rounded border border-slate-200">
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
               <div className="text-xs font-bold text-slate-900">ShiftFix AI Helpdesk</div>
               <div className="text-[11px] text-emerald-600 font-bold flex items-center gap-1.5 lg:justify-end">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                WhatsApp Ondersteuning Actief
+                {t.footer.supportActive}
               </div>
             </div>
             <div className="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center shadow-xs">
@@ -130,7 +130,7 @@ export const Footer: React.FC = () => {
                   onClick={() => scrollToSection('demo')}
                   className="hover:text-emerald-700 transition-colors cursor-pointer"
                 >
-                  Demo aanvragen
+                  {t.nav.requestDemo}
                 </button>
               </li>
             </ul>
@@ -142,7 +142,7 @@ export const Footer: React.FC = () => {
               {t.footer.sectorsCol}
             </div>
             <ul className="space-y-2">
-              {['Horeca', 'Logistiek', 'Zorg & Welzijn', 'Retail', 'Schoonmaak', 'Beveiliging'].map((item) => (
+              {t.hero.sectorPills.map((item) => (
                 <li key={item}>
                   <button
                     type="button"
@@ -202,7 +202,7 @@ export const Footer: React.FC = () => {
             © {new Date().getFullYear()} ShiftFix AI. {t.footer.rights}
           </div>
           <div className="flex items-center gap-1 text-slate-400">
-            <span>AI-ondersteunde personeelsplanning via WhatsApp</span>
+            <span>{t.nav.taglineBadge}</span>
           </div>
         </div>
       </div>

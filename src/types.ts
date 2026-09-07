@@ -21,6 +21,11 @@ export interface TranslationData {
     taglineBadge: string;
   };
   hero: {
+    statPlanningTime: string;
+    statEqualChances: string;
+    statFirstReplies: string;
+    motto: string;
+    sectorPills: string[];
     badge: string;
     title: string;
     subtitle: string;
@@ -118,11 +123,19 @@ export interface TranslationData {
     };
   };
   roi: {
+    eyebrow: string;
+    exampleLabel: string;
+    controlsTitle: string;
+    controlsHint: string;
+    ctaButton: string;
     title: string;
     subtitle: string;
     exampleText: string;
     calloutText: string;
     labels: {
+      perMonth: string;
+      absencesUnit: string;
+      hours: string;
       absencesPerMonth: string;
       callTimePerAbsence: string;
       minutes: string;
@@ -130,6 +143,11 @@ export interface TranslationData {
       euroPerHour: string;
     };
     results: {
+      estimatedReturn: string;
+      investmentLabel: string;
+      netProfitLabel: string;
+      perMonthSuffix: string;
+      perMonthBack: string;
       monthlyHoursSaved: string;
       monthlyCostSaved: string;
       annualCostSaved: string;
@@ -201,6 +219,10 @@ export interface TranslationData {
     badge: string;
   };
   footer: {
+    sectorFocus: string;
+    avgSavingsLabel: string;
+    avgSavingsBasis: string;
+    supportActive: string;
     productCol: string;
     sectorsCol: string;
     companyCol: string;

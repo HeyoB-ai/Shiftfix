@@ -73,15 +73,15 @@ export const Hero: React.FC = () => {
             <div className="grid grid-cols-3 gap-3 pt-4 max-w-xl">
               <div className="p-3.5 sm:p-4 bg-white rounded-2xl border border-slate-200 shadow-xs">
                 <div className="text-xl sm:text-2xl font-black text-emerald-600">-85%</div>
-                <div className="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">Minder planningstijd</div>
+                <div className="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">{t.hero.statPlanningTime}</div>
               </div>
               <div className="p-3.5 sm:p-4 bg-white rounded-2xl border border-slate-200 shadow-xs">
                 <div className="text-xl sm:text-2xl font-black text-emerald-600">100%</div>
-                <div className="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">Gelijke kansen</div>
+                <div className="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">{t.hero.statEqualChances}</div>
               </div>
               <div className="p-3.5 sm:p-4 bg-white rounded-2xl border border-slate-200 shadow-xs">
                 <div className="text-xl sm:text-2xl font-black text-emerald-600">&lt; 2 min</div>
-                <div className="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">Eerste reacties</div>
+                <div className="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">{t.hero.statFirstReplies}</div>
               </div>
             </div>
 
@@ -91,7 +91,7 @@ export const Hero: React.FC = () => {
                 {t.hero.sectorsLabel}
               </span>
               <div className="flex flex-wrap gap-1.5">
-                {['Horeca', 'Logistiek', 'Zorg', 'Retail', 'Schoonmaak', 'Beveiliging'].map((sector) => (
+                {t.hero.sectorPills.map((sector) => (
                   <span
                     key={sector}
                     className="bg-white text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded-md border border-slate-200"
@@ -107,7 +107,7 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-5 flex flex-col items-center justify-center relative mt-4 lg:mt-0">
             {/* Playful top arrow annotation */}
             <div className="hidden sm:flex items-center gap-1.5 absolute -top-8 right-6 text-emerald-800 font-handwriting text-xl rotate-[-4deg]">
-              <span>Teamwork werkt beter met AI</span>
+              <span>{t.hero.noteScript}</span>
               <span className="text-2xl">↳</span>
             </div>
 
@@ -115,7 +115,7 @@ export const Hero: React.FC = () => {
 
             {/* Bottom handwritten motto */}
             <div className="mt-4 text-center font-handwriting text-emerald-800 text-xl font-bold">
-              Blije teams. Sterkere organisaties.
+              {t.hero.motto}
             </div>
           </div>
         </div>
