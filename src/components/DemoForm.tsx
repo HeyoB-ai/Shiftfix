@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Send, CheckCircle2, ShieldCheck, Sparkles, Building2, Mail, Phone, User, MessageSquare } from 'lucide-react';
 
+// Taalonafhankelijke defaults: deze waarden blijven geldig als de gebruiker
+// van taal wisselt, zodat de selects niet leeg raken.
+const defaultSector = 'horeca';
+const defaultEmployeesIdx = '0';
+
 export const DemoForm: React.FC = () => {
   const { t } = useLanguage();
 
@@ -10,10 +15,14 @@ export const DemoForm: React.FC = () => {
     org: '',
     email: '',
     phone: '',
-    employees: t.demo.fields.employeesOptions[0] || '1 - 25 medewerkers',
-    sector: 'Horeca',
+    employees: defaultEmployeesIdx,
+    sector: defaultSector,
     message: '',
   });
+
+  const selectedSectorLabel =
+    t.demo.fields.sectorOptions.find((opt) => opt.value === formData.sector)?.label ||
+    formData.sector;
 
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -55,8 +64,8 @@ export const DemoForm: React.FC = () => {
       org: '',
       email: '',
       phone: '',
-      employees: t.demo.fields.employeesOptions[0] || '1 - 25 medewerkers',
-      sector: 'Horeca',
+      employees: defaultEmployeesIdx,
+      sector: defaultSector,
       message: '',
     });
   };
@@ -69,7 +78,7 @@ export const DemoForm: React.FC = () => {
           <div className="text-center mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 border border-emerald-200">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Persoonlijke Demonstratie</span>
+              <span>{t.demo.eyebrow}</span>
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
               {t.demo.title}
@@ -94,11 +103,11 @@ export const DemoForm: React.FC = () => {
                 </p>
 
                 <div className="p-4 bg-white rounded-xl border border-slate-200 max-w-md mx-auto text-left text-xs text-slate-600 space-y-1">
-                  <div className="font-bold text-slate-800">Aanvraag overzicht:</div>
-                  <div>• Naam: <span className="font-semibold text-slate-900">{formData.name}</span></div>
-                  <div>• Organisatie: <span className="font-semibold text-slate-900">{formData.org}</span></div>
-                  <div>• E-mail: <span className="font-semibold text-slate-900">{formData.email}</span></div>
-                  <div>• Sector: <span className="font-semibold text-slate-900">{formData.sector}</span></div>
+                  <div className="font-bold text-slate-800">{t.demo.summaryTitle}</div>
+                  <div>• {t.demo.fields.name}: <span className="font-semibold text-slate-900">{formData.name}</span></div>
+                  <div>• {t.demo.fields.org}: <span className="font-semibold text-slate-900">{formData.org}</span></div>
+                  <div>• {t.demo.fields.email}: <span className="font-semibold text-slate-900">{formData.email}</span></div>
+                  <div>• {t.demo.fields.sector}: <span className="font-semibold text-slate-900">{selectedSectorLabel}</span></div>
                 </div>
 
                 <div className="pt-4">
@@ -212,7 +221,7 @@ export const DemoForm: React.FC = () => {
                       className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 text-sm text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-emerald-500/40 transition-all cursor-pointer"
                     >
                       {t.demo.fields.employeesOptions.map((opt, i) => (
-                        <option key={i} value={opt}>
+                        <option key={i} value={String(i)}>
                           {opt}
                         </option>
                       ))}
@@ -230,15 +239,11 @@ export const DemoForm: React.FC = () => {
                       onChange={(e) => setFormData({ ...formData, sector: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 text-sm text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-emerald-500/40 transition-all cursor-pointer"
                     >
-                      <option value="Horeca">Horeca</option>
-                      <option value="Logistiek">Logistiek & Magazijn</option>
-                      <option value="Zorg">Zorg & Welzijn</option>
-                      <option value="Retail">Retail & Supermarkt</option>
-                      <option value="Schoonmaak">Schoonmaak & Facilitair</option>
-                      <option value="Beveiliging">Beveiliging</option>
-                      <option value="Bezorgdienst">Bezorgdienst / Koeriers</option>
-                      <option value="Evenementen">Evenementen & Productie</option>
-                      <option value="Overig">Andere sector</option>
+                      {t.demo.fields.sectorOptions.map((opt) => (
+                        <option key={opt.value} value={opt.value}>
+                          {opt.label}
+                        </option>
+                      ))}
                     </select>
                   </div>
                 </div>

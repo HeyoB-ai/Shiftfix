@@ -58,6 +58,7 @@ export interface TranslationData {
     impactQuote: string;
   };
   howItWorks: {
+    eyebrow: string;
     whatsappOnlyPill: string;
     title: string;
     subtitle: string;
@@ -72,6 +73,7 @@ export interface TranslationData {
     highlightPills: string[];
   };
   benefits: {
+    eyebrow: string;
     itemBadgeBenefit: string;
     itemBadgeFriction: string;
     title: string;
@@ -156,6 +158,8 @@ export interface TranslationData {
     };
   };
   demo: {
+    eyebrow: string;
+    summaryTitle: string;
     title: string;
     subtitle: string;
     fields: {
@@ -172,6 +176,10 @@ export interface TranslationData {
       employeesOptions: string[];
       sector: string;
       sectorPlaceholder: string;
+      sectorOptions: {
+        value: string;
+        label: string;
+      }[];
       message: string;
       messagePlaceholder: string;
     };

@@ -81,6 +81,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'Als iemand uitvalt, hoef je niet meer iedereen af te bellen. ShiftFix AI vraagt de groep automatisch wie kan invallen.',
     },
     howItWorks: {
+      eyebrow: 'Eenvoudig & Doelgericht',
       whatsappOnlyPill: 'Geheel binnen WhatsApp',
       title: 'Hoe ShiftFix AI werkt in 4 stappen',
       subtitle: 'Geen nieuw systeem dat iedereen moet leren. ShiftFix AI integreert naadloos in de WhatsApp-groepen waar je team nu al dagelijks actief is.',
@@ -120,6 +121,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      eyebrow: 'Maximale Rust & Effectiviteit',
       itemBadgeBenefit: 'Direct voordeel',
       itemBadgeFriction: 'Geen frictie',
       title: 'Waarom planners en teams kiezen voor ShiftFix AI',
@@ -280,6 +282,8 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     demo: {
+      eyebrow: 'Persoonlijke Demonstratie',
+      summaryTitle: 'Aanvraag overzicht:',
       title: 'Zie in 2 minuten hoe ShiftFix AI werkt.',
       subtitle: 'Laat ons zien hoe jullie nu opengevallen diensten invullen. We demonstreren graag hoe ShiftFix AI dat proces eenvoudiger en rustiger kan maken.',
       fields: {
@@ -296,6 +300,17 @@ export const translations: Record<Language, TranslationData> = {
         employeesOptions: ['1 - 25 medewerkers', '25 - 75 medewerkers', '75 - 200 medewerkers', '200+ medewerkers'],
         sector: 'Sector / Branche',
         sectorPlaceholder: 'Selecteer je sector',
+        sectorOptions: [
+          { value: 'horeca', label: 'Horeca' },
+          { value: 'logistiek', label: 'Logistiek & Magazijn' },
+          { value: 'zorg', label: 'Zorg & Welzijn' },
+          { value: 'retail', label: 'Retail & Supermarkt' },
+          { value: 'schoonmaak', label: 'Schoonmaak & Facilitair' },
+          { value: 'beveiliging', label: 'Beveiliging' },
+          { value: 'bezorgdienst', label: 'Bezorgdienst / Koeriers' },
+          { value: 'evenementen', label: 'Evenementen & Productie' },
+          { value: 'overig', label: 'Andere sector' },
+        ],
         message: 'Hoe pakken jullie ziekmeldingen nu aan?',
         messagePlaceholder: 'Vertel kort hoe jullie planning nu invallers zoekt en welke uitdagingen je tegenkomt...',
       },
@@ -476,6 +491,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'When someone drops out, you no longer need to call everyone. ShiftFix AI automatically asks the team who can cover.',
     },
     howItWorks: {
+      eyebrow: 'Simple & focused',
       whatsappOnlyPill: 'Entirely within WhatsApp',
       title: 'How ShiftFix AI works in 4 steps',
       subtitle: 'No complex app to install. ShiftFix AI integrates seamlessly into the WhatsApp group where your team already connects every single day.',
@@ -515,6 +531,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      eyebrow: 'Maximum calm & effectiveness',
       itemBadgeBenefit: 'Immediate benefit',
       itemBadgeFriction: 'No friction',
       title: 'Why schedulers and teams choose ShiftFix AI',
@@ -675,6 +692,8 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     demo: {
+      eyebrow: 'Personal demonstration',
+      summaryTitle: 'Request summary:',
       title: 'See how ShiftFix AI works in 2 minutes.',
       subtitle: 'Show us how you currently replace absent staff. We’ll show you how ShiftFix AI automates the struggle.',
       fields: {
@@ -691,6 +710,17 @@ export const translations: Record<Language, TranslationData> = {
         employeesOptions: ['1 - 25 employees', '25 - 75 employees', '75 - 200 employees', '200+ employees'],
         sector: 'Industry sector',
         sectorPlaceholder: 'Select your sector',
+        sectorOptions: [
+          { value: 'horeca', label: 'Hospitality' },
+          { value: 'logistiek', label: 'Logistics & warehousing' },
+          { value: 'zorg', label: 'Healthcare & social care' },
+          { value: 'retail', label: 'Retail & supermarkets' },
+          { value: 'schoonmaak', label: 'Cleaning & facilities' },
+          { value: 'beveiliging', label: 'Security' },
+          { value: 'bezorgdienst', label: 'Delivery & couriers' },
+          { value: 'evenementen', label: 'Events & production' },
+          { value: 'overig', label: 'Other sector' },
+        ],
         message: 'How do you handle sick replacements today?',
         messagePlaceholder: 'Briefly tell us your current routine and what pain points you experience...',
       },
@@ -871,6 +901,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'Wenn jemand ausfällt, müssen Sie nicht mehr alle abtelefonieren. ShiftFix AI fragt die Gruppe automatisch, wer einspringen kann.',
     },
     howItWorks: {
+      eyebrow: 'Einfach & zielgerichtet',
       whatsappOnlyPill: 'Komplett in WhatsApp',
       title: 'So funktioniert ShiftFix AI in 4 Schritten',
       subtitle: 'Keine neue App, die Mitarbeiter installieren müssen. ShiftFix AI läuft direkt in der WhatsApp-Gruppe, die Ihr Team ohnehin täglich nutzt.',
@@ -910,6 +941,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      eyebrow: 'Maximale Ruhe & Effektivität',
       itemBadgeBenefit: 'Sofortiger Vorteil',
       itemBadgeFriction: 'Keine Reibung',
       title: 'Warum Schichtplaner auf ShiftFix AI setzen',
@@ -1070,6 +1102,8 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     demo: {
+      eyebrow: 'Persönliche Demo',
+      summaryTitle: 'Übersicht Ihrer Anfrage:',
       title: 'In 2 Minuten sehen, wie ShiftFix AI funktioniert.',
       subtitle: 'Erzählen Sie uns, wie Sie Schichtausfälle aktuell lösen. Wir zeigen Ihnen, wie ShiftFix AI diesen Prozess entspannt.',
       fields: {
@@ -1086,6 +1120,17 @@ export const translations: Record<Language, TranslationData> = {
         employeesOptions: ['1 - 25 Mitarbeiter', '25 - 75 Mitarbeiter', '75 - 200 Mitarbeiter', '200+ Mitarbeiter'],
         sector: 'Branche / Sektor',
         sectorPlaceholder: 'Branche auswählen',
+        sectorOptions: [
+          { value: 'horeca', label: 'Gastronomie' },
+          { value: 'logistiek', label: 'Logistik & Lager' },
+          { value: 'zorg', label: 'Pflege & Soziales' },
+          { value: 'retail', label: 'Einzelhandel & Supermarkt' },
+          { value: 'schoonmaak', label: 'Reinigung & Facility' },
+          { value: 'beveiliging', label: 'Sicherheit' },
+          { value: 'bezorgdienst', label: 'Lieferdienst & Kurier' },
+          { value: 'evenementen', label: 'Events & Produktion' },
+          { value: 'overig', label: 'Andere Branche' },
+        ],
         message: 'Wie läuft die Vertretungssuche heute bei Ihnen ab?',
         messagePlaceholder: 'Kurze Beschreibung Ihrer aktuellen Abläufe und Herausforderungen...',
       },
@@ -1266,6 +1311,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'Cuando alguien falta, ya no tienes que llamar a toda la plantilla. ShiftFix AI pregunta automáticamente al grupo quién puede cubrirlo.',
     },
     howItWorks: {
+      eyebrow: 'Sencillo y directo',
       whatsappOnlyPill: 'Todo dentro de WhatsApp',
       title: 'Cómo funciona ShiftFix AI en 4 pasos',
       subtitle: 'Sin aplicaciones complicadas que los empleados tengan que instalar. ShiftFix AI opera directamente dentro del grupo de WhatsApp que ya utilizan a diario.',
@@ -1305,6 +1351,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      eyebrow: 'Máxima calma y eficacia',
       itemBadgeBenefit: 'Beneficio inmediato',
       itemBadgeFriction: 'Sin fricción',
       title: 'Por qué los supervisores eligen ShiftFix AI',
@@ -1465,6 +1512,8 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     demo: {
+      eyebrow: 'Demostración personalizada',
+      summaryTitle: 'Resumen de la solicitud:',
       title: 'Descubre en 2 minutos cómo funciona ShiftFix AI.',
       subtitle: 'Cuéntanos cómo cubres las vacantes hoy. Te mostraremos cómo ShiftFix AI simplifica y acelera todo el proceso.',
       fields: {
@@ -1481,6 +1530,17 @@ export const translations: Record<Language, TranslationData> = {
         employeesOptions: ['1 - 25 empleados', '25 - 75 empleados', '75 - 200 empleados', '200+ empleados'],
         sector: 'Sector o Industria',
         sectorPlaceholder: 'Selecciona tu sector',
+        sectorOptions: [
+          { value: 'horeca', label: 'Hostelería' },
+          { value: 'logistiek', label: 'Logística y almacén' },
+          { value: 'zorg', label: 'Sanidad y servicios sociales' },
+          { value: 'retail', label: 'Retail y supermercados' },
+          { value: 'schoonmaak', label: 'Limpieza y servicios generales' },
+          { value: 'beveiliging', label: 'Seguridad' },
+          { value: 'bezorgdienst', label: 'Reparto y mensajería' },
+          { value: 'evenementen', label: 'Eventos y producción' },
+          { value: 'overig', label: 'Otro sector' },
+        ],
         message: '¿Cómo gestionáis las sustituciones ahora?',
         messagePlaceholder: 'Cuéntanos brevemente vuestro proceso actual y qué complicaciones tenéis...',
       },
@@ -1661,6 +1721,7 @@ export const translations: Record<Language, TranslationData> = {
       impactQuote: 'Quand un collaborateur est absent, vous n’avez plus besoin d’appeler tout le monde. ShiftFix AI sollicite automatiquement l’équipe.',
     },
     howItWorks: {
+      eyebrow: 'Simple et efficace',
       whatsappOnlyPill: 'Entièrement dans WhatsApp',
       title: 'Comment fonctionne ShiftFix AI en 4 étapes',
       subtitle: 'Aucune application complexe à installer. ShiftFix AI s’intègre directement dans le groupe WhatsApp que votre équipe utilise déjà chaque jour.',
@@ -1700,6 +1761,7 @@ export const translations: Record<Language, TranslationData> = {
       ],
     },
     benefits: {
+      eyebrow: 'Sérénité et efficacité maximales',
       itemBadgeBenefit: 'Bénéfice immédiat',
       itemBadgeFriction: 'Sans friction',
       title: 'Pourquoi les planificateurs choisissent ShiftFix AI',
@@ -1860,6 +1922,8 @@ export const translations: Record<Language, TranslationData> = {
       },
     },
     demo: {
+      eyebrow: 'Démonstration personnalisée',
+      summaryTitle: 'Récapitulatif de la demande :',
       title: 'Découvrez ShiftFix AI en 2 minutes.',
       subtitle: 'Montrez-nous comment vous gérez actuellement les remplacements. Nous vous montrerons comment ShiftFix AI simplifie l’ensemble du processus.',
       fields: {
@@ -1876,6 +1940,17 @@ export const translations: Record<Language, TranslationData> = {
         employeesOptions: ['1 - 25 salariés', '25 - 75 salariés', '75 - 200 salariés', '200+ salariés'],
         sector: 'Secteur d’activité',
         sectorPlaceholder: 'Sélectionnez votre secteur',
+        sectorOptions: [
+          { value: 'horeca', label: 'Restauration' },
+          { value: 'logistiek', label: 'Logistique & entrepôt' },
+          { value: 'zorg', label: 'Santé & social' },
+          { value: 'retail', label: 'Commerce & supermarché' },
+          { value: 'schoonmaak', label: 'Nettoyage & services généraux' },
+          { value: 'beveiliging', label: 'Sécurité' },
+          { value: 'bezorgdienst', label: 'Livraison & coursiers' },
+          { value: 'evenementen', label: 'Événementiel & production' },
+          { value: 'overig', label: 'Autre secteur' },
+        ],
         message: 'Comment gérez-vous les absences aujourd’hui ?',
         messagePlaceholder: 'Décrivez brièvement vos méthodes actuelles et vos difficultés...',
       },
